@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Confirm</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script language="javascript">
+            var js_resposta = true;
+
+            js_resposta = window.confirm('Clique em um dos dois botões');
+
+            if(js_resposta == true){
+                document.write('Você apertou no botão: ok');
+            }
+            else{
+                document.write('Você apertou no botão: cancelar');
+            }
+
+            document.write('<p><b>Classificação em ordem crescente:</b> ',js_n1,' e ',js_n2,'</p>');
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UpperLowerCase</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h3>Formulário de Consulta de Curso: </h3>
+        <p></p>
+        <form name="formcurso" action=" " method="POST">
+            Digite seu curso: <input type="text" name="f_cursodig" size="8" maxlength="4"><p></p>
+            <input type="button" name="btn_validar" value="Validar" onclick="cadcurso()">
+            <input type="reset" name="btn_apagar" value="Apagar">
+            <p></p>Código do Curso: <input type="text" name="f_codcurso" size="15" maxlength="10">
+        </form>
+        <script language="javascript">
+            var js_codcurso;
+            
+            function cadcurso(){
+                js_codcurso = document.formcurso.f_cursodig.value;
+                if(js_codcurso.toLowerCase == 'sist'){
+                    document.formcurso.f_codcurso.value = 'sist001/F8'
+                }
+                else{
+                    window.alert('Curso Invalido')
+                }
+            }
+        </script>
+    </body>
+</html>
